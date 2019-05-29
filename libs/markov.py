@@ -111,6 +111,8 @@ class NameGenerator(object):
     def __pull_random(self, list_, count):
         """Pull the specified number of random names from the given list."""
         names = list(self.name_lists[list_])
+        if len(names) < count:
+            count = len(names)
         return [
             names.pop(random.choice(range(len(names))))
             for _ in range(count)

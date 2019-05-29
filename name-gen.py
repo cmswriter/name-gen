@@ -1,15 +1,6 @@
 #!/usr/bin/env python3
 
-usage = """
-Name-Gen Frontend.
-
-This application generates random names from predefined lists. It allows for
-combining lists or adding your own. The lists are defined in the "lists"
-directory, as text files with one name per line. To create a new name list,
-simply give it a unique one-word name and write one name per line within the
-list. The bigger, the better. At least 1,000 names is preferred, but if there
-are less, that's okay.
-"""
+usage = """Name-Gen Frontend."""
 
 import argparse, sys, textwrap
 
