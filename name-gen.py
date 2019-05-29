@@ -9,17 +9,6 @@ directory, as text files with one name per line. To create a new name list,
 simply give it a unique one-word name and write one name per line within the
 list. The bigger, the better. At least 1,000 names is preferred, but if there
 are less, that's okay.
-
-Usage:
-name-gen.py [options] [name lists]
-
-Options:
--n [#]      The number of names to be generated.
-
-Examples:
-name-gen.py male              Generate one name based on lists/male.txt
-name-gen.py -n 5 female       Generate five names based on lists/female.txt
-name-gen.py -n 5 male,female  Generate five names based on both lists combined
 """
 
 import argparse, sys, textwrap
@@ -27,9 +16,9 @@ import argparse, sys, textwrap
 from libs.markov import NameGenerator
 
 
-def pnr(object):
-    print(f"[-]   {object}")
-    return object
+def pnr(obj):
+    print(f"[-]   {obj}")
+    return obj
 
 def read_args():
     parser = argparse.ArgumentParser(
@@ -47,6 +36,9 @@ def read_args():
                   generate five names based on lists/female.txt
               {sys.argv[0]} -n 5 male,female
                   generate five names based on both lists combined
+              {sys.argv[0]} -o names.txt -n 5 female
+                  generate five names based on lists/female.txt and store
+                  them in names.txt
             """
         ),
         formatter_class=argparse.RawDescriptionHelpFormatter
@@ -57,6 +49,12 @@ def read_args():
         type=int,
         default=1,
         help="how many names to generate"
+    )
+    parser.add_argument(
+        "-o",
+        "--out",
+        default=None,
+        help="output file name",
     )
     parser.add_argument("lists", help="comma-separated list selections")
     return parser.parse_args()
@@ -79,3 +77,8 @@ names = [
     for name
     in NameGen.generate(args.num)
 ]
+
+if args.out:
+    with open(args.out, "w") as f:
+        f.write("\n".join(names))
+    print(f"[*] Names saved to {args.out}.")

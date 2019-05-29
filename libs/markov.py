@@ -14,6 +14,7 @@ author: CMSteffen - cmsteffen@protonmail.com
 """
 
 import random
+from collections import defaultdict
 
 
 class Mdict(object):
@@ -92,41 +93,42 @@ class NameGenerator(object):
 
     # ---[ PRIVATE METHODS ]--- #
 
-    def __init__(self):
+    def __init__(self, lists):
         """Initialize the Name Generator."""
-        self.Male_List = self.__load_list("libs/namelists/male.txt")
-        self.Female_List = self.__load_list("libs/namelists/female.txt")
+        self.name_lists = dict()
+        for list_ in lists:
+            self.name_lists[list_] = self.__load_list(f"lists/{list_}.txt")
 
     def __load_list(self, filename):
         """Load a list of names from the specified text file."""
-        return [item.strip() for item in open(filename, "r").readlines()]
+        return [
+            item.strip()
+            for item
+            in open(filename, "r").readlines()
+            if item.strip() != ""
+        ]
 
-    def __pull_random(self, source_list, count):
-        """Pull [count] random elements from [source_list]."""
-        source_list = list(source_list)
-        new_list = []
-        for x in range(count):
-            new_list.append(
-                source_list.pop(random.choice(range(len(source_list))))
-            )
-        return new_list
+    def __pull_random(self, list_, count):
+        """Pull the specified number of random names from the given list."""
+        names = list(self.name_lists[list_])
+        return [
+            names.pop(random.choice(range(len(names))))
+            for _ in range(count)
+        ]
 
-    def __pick_names(self, gender):
-        """Pick 1000 random names from the specified gendered list."""
-        names = []
-        if gender == "male":
-            names = self.__pull_random(self.Male_List, 1000)
-        elif gender == "female":
-            names = self.__pull_random(self.Female_List, 1000)
-        elif gender == "agender":
-            names = self.__pull_random(self.Male_List, 500)
-            names += self.__pull_random(self.Female_List, 500)
-        else:
-            raise ValueError("Invalid gender specified: {}".format(gender))
+    def __pick_names(self):
+        """Pick 500 random names from each of the specified lists."""
+        names = list()
+        for list_ in self.name_lists:
+            names += self.__pull_random(list_, 500)
         return names
 
     # ---[ PUBLIC METHODS ]--- #
 
-    def get_name(self, gender):
+    def generate(self, count):
+        """Generate the specified number of new names."""
+        return [self.get_name() for _ in range(count)]
+
+    def get_name(self):
         """Generate a new name for the specified gender."""
-        return MName(self.__pick_names(gender)).New()
+        return MName(self.__pick_names()).New()
