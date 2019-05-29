@@ -94,14 +94,17 @@ bash@localhost$ ./name-gen.py names
 The more, the merrier. More names adds more potential variety to the names generated, while a shorter list will result in less diverse results.
 
 ## What name lists are currently included?
+### Human Names from the United States
 * female.txt: 4,098 female first names taken from U.S. Census data.
 * male.txt: 1,147 male first names taken from U.S. Census data.
 * last.txt: 1,118 surnames taken from U.S. Census data.
+### Racial Names from The Elder Scrolls Games
 * altmer_female.txt: 982 female Altmer first names.
 * altmer_male.txt: 1,175 male Altmer first names.
 * altmer_family.txt: 165 Altmer family surnames.
+* argonian_female.txt: 928 female Argonian first names.
+* argonian_male.txt: 984 male Argonian first names.
+* argonian_family.txt: 169 Argonian family surnames.
 * dunmer_female.txt: 1,471 female Dunmer first names.
 * dunmer_male.txt: 1,729 male Dunmer first names.
 * dunmer_family.txt: 1,344 Dunmer family surnames.
-
-*Note: Altmer and Dunmer names were taken from The Elder Scrolls games.
