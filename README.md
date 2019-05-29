@@ -91,12 +91,17 @@ bash@localhost$ ./name-gen.py names
 
 
 ## How many names should be in a name list?
-The more, the merrier. More names adds more potential variety to the names generated, while a shorter list will result in less diverse results. The included name lists each have at least 500 names.
+The more, the merrier. More names adds more potential variety to the names generated, while a shorter list will result in less diverse results.
 
 ## What name lists are currently included?
 * female.txt: 4,098 female first names taken from U.S. Census data.
 * male.txt: 1,147 male first names taken from U.S. Census data.
 * last.txt: 1,118 surnames taken from U.S. Census data.
-* dunmer_female.txt: 1,471 female Dunmer first names from The Elder Scrolls games.
-* dunmer_male.txt: 1,729 male Dunmer first names from The Elder Scrolls games.
-* dunmer_family.txt: 1,344 Dunmer family surnames from The Elder Scrolls games.
+* altmer_female.txt: 982 female Altmer first names.
+* altmer_male.txt: 1,175 male Altmer first names.
+* altmer_family.txt: 165 Altmer family surnames.
+* dunmer_female.txt: 1,471 female Dunmer first names.
+* dunmer_male.txt: 1,729 male Dunmer first names.
+* dunmer_family.txt: 1,344 Dunmer family surnames.
+
+*Note: Altmer and Dunmer names were taken from The Elder Scrolls games.
