@@ -97,3 +97,6 @@ The more, the merrier. More names adds more potential variety to the names gener
 * female.txt: 4,098 female first names taken from U.S. Census data.
 * male.txt: 1,147 male first names taken from U.S. Census data.
 * last.txt: 1,118 surnames taken from U.S. Census data.
+* dunmer_female.txt: 1,471 female Dunmer first names from The Elder Scrolls games.
+* dunmer_male.txt: 1,729 male Dunmer first names from The Elder Scrolls games.
+* dunmer_family.txt: 1,344 Dunmer family surnames from The Elder Scrolls games.
