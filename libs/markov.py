@@ -125,6 +125,13 @@ class NameGenerator(object):
             names += self.__pull_random(list_, 500)
         return names
 
+    def __cap_splits(self, s):
+        """Capitalize names that are split with spaces or apostrophes."""
+        splitters = ["'", " "]
+        for splitter in splitters:
+            s = f"\n{splitter}\n".join([part for part in s.split(splitter)])
+        return "".join([name.capitalize() for name in s.split("\n")])
+
     # ---[ PUBLIC METHODS ]--- #
 
     def generate(self, count):
@@ -133,4 +140,4 @@ class NameGenerator(object):
 
     def get_name(self):
         """Generate a new name for the specified gender."""
-        return MName(self.__pick_names()).New()
+        return self.__cap_splits(MName(self.__pick_names()).New())
