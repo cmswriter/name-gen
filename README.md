@@ -38,6 +38,58 @@ Name lists are stored in the 'lists' directory. Name-Gen allows you to select on
 ## I can create my own lists?
 It's not hard. The lists are simply text files with one name per line. To create a new name list, simply add your names to a .txt file and give it a unique one-word name.
 
+### There's gotta be an easier way.
+Easier than putting one name per line in a plain text file?
+
+Well, yes, actually. A utility has been included, called `add-list.py`, which will automatically format your name list and add it to the `lists` directory. If you want to use this tool, simply fill a text file with names that are separated by commas or new lines. Then, use `add-list.py` like so:
+
+```
+add-list.py [list.txt] [list name]
+```
+
+For example, let's say you've got the following list of names called `names.txt`:
+
+```
+susan, alana, julia, mallory,
+
+ALEXANDRA,, , alexandra
+blaise
+,
+janice, susan, alana,,
+
+```
+
+That's pretty sloppy, but `add-list.py` can handle it:
+
+```
+bash@localhost$ ./add-list.py names.txt names
+7 names saved in lists/names.txt.
+```
+
+The script automatically detects duplicate names and fixes capitalization. Here's the contents of `lists/names.txt` after the script is run:
+
+```
+Alana
+Alexandra
+Blaise
+Janice
+Julia
+Mallory
+Susan
+```
+
+Then, to use that name list, simply call it by name:
+
+```
+bash@localhost$ ./name-gen.py names
+[*] Name-Gen by CMSteffen (v0.0.1)
+[*] Lists selected:
+[-]   names
+[*] Names generated:
+[-]   Alaise
+```
+
+
 ## How many names should be in a name list?
 The more, the merrier. More names adds more potential variety to the names generated, while a shorter list will result in less diverse results. The included name lists each have at least 500 names.
 
