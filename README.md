@@ -107,6 +107,10 @@ The more, the merrier. More names adds more potential variety to the names gener
 * argonian_female.txt: 928 female Argonian first names.
 * argonian_male.txt: 984 male Argonian first names.
 * argonian_family.txt: 169 Argonian family surnames.
+#### Bosmer
+* bosmer_female.txt: 852 female Bosmer first names.
+* bosmer_male.txt: 969 male Bosmer first names.
+* bosmer_family.txt: 221 Bosmer family surnames.
 #### Breton
 * breton_female.txt: 1,019 female Breton first names.
 * breton_male.txt: 1,157 male Breton first names.
@@ -136,4 +140,4 @@ The more, the merrier. More names adds more potential variety to the names gener
 * redguard_male.txt: 1,021 male Redguard first names.
 * redguard_family.txt: 168 Redguard family surnames.
 
-**Note:** The Altmer, Argonian, Breton, Dunmer, Imperial, Khajiit, Nord, Redguard races and names belong to The Elder Scrolls games and their creators, and no claim is made by the author of this software of ownership of these names. The creator of this software included these names as an homage, not as a claim of any kind.
+**Note:** The Altmer, Argonian, Bosmer, Breton, Dunmer, Imperial, Khajiit, Nord, Orc and Redguard races and names belong to The Elder Scrolls games and their creators, and no claim is made by the author of this software of ownership of these names. The creator of this software included these names as an homage, not as a claim of any kind.
