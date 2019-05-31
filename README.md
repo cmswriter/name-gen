@@ -111,6 +111,10 @@ The more, the merrier. More names adds more potential variety to the names gener
 * dunmer_female.txt: 1,471 female Dunmer first names.
 * dunmer_male.txt: 1,729 male Dunmer first names.
 * dunmer_family.txt: 1,344 Dunmer family surnames.
+#### Imperial
+* imperial_female.txt: 351 female Imperial first names.
+* imperial_male.txt: 547 male Imperial first names.
+* imperial_family.txt: 635 Imperial family names.
 #### Khajiit
 * khajiit_female: 977 female Khajiit first names.
 * khajiit_male: 1,041 male Khajiit first names.
@@ -128,4 +132,4 @@ The more, the merrier. More names adds more potential variety to the names gener
 * redguard_male.txt: 1,021 male Redguard first names.
 * redguard_family.txt: 168 Redguard family names.
 
-**Note:** Altmer, Argonian, Dunmer, Khajiit, Nord, Redguard belong to The Elder Scrolls games and their creators, and no claim is made by the author of this software of ownership of these names. The creator of this software included these names as an homage, not as a claim of any kind.
+**Note:** The Altmer, Argonian, Dunmer, Imperial, Khajiit, Nord, Redguard races and names belong to The Elder Scrolls games and their creators, and no claim is made by the author of this software of ownership of these names. The creator of this software included these names as an homage, not as a claim of any kind.
