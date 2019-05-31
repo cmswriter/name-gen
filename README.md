@@ -128,4 +128,4 @@ The more, the merrier. More names adds more potential variety to the names gener
 * redguard_male.txt: 1,021 male Redguard first names.
 * redguard_family.txt: 168 Redguard family names.
 
-**Note:** Altmer, Argonian, Dunmer, Redguard belong to The Elder Scrolls games and their creators, and no claim is made by the author of this software of ownership of these names. The creator of this software included these names as an homage, not as a claim of any kind.
+**Note:** Altmer, Argonian, Dunmer, Khajiit, Nord, Redguard belong to The Elder Scrolls games and their creators, and no claim is made by the author of this software of ownership of these names. The creator of this software included these names as an homage, not as a claim of any kind.
