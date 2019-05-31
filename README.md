@@ -111,6 +111,10 @@ The more, the merrier. More names adds more potential variety to the names gener
 * dunmer_female.txt: 1,471 female Dunmer first names.
 * dunmer_male.txt: 1,729 male Dunmer first names.
 * dunmer_family.txt: 1,344 Dunmer family surnames.
+#### Khajiit
+* khajiit_female: 977 female Khajiit first names.
+* khajiit_male: 1,041 male Khajiit first names.
+* khajiit_family: 231 Khajiit family names.
 #### Nord
 * nord_female.txt: 958 female Nord first names.
 * nord_male.txt: 1,535 male Nord first names.
