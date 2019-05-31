@@ -99,12 +99,21 @@ The more, the merrier. More names adds more potential variety to the names gener
 * male.txt: 1,147 male first names taken from U.S. Census data.
 * last.txt: 1,118 surnames taken from U.S. Census data.
 ### Racial Names from The Elder Scrolls Games
+#### Altmer
 * altmer_female.txt: 982 female Altmer first names.
 * altmer_male.txt: 1,175 male Altmer first names.
 * altmer_family.txt: 165 Altmer family surnames.
+#### Argonian
 * argonian_female.txt: 928 female Argonian first names.
 * argonian_male.txt: 984 male Argonian first names.
 * argonian_family.txt: 169 Argonian family surnames.
+#### Dunmer
 * dunmer_female.txt: 1,471 female Dunmer first names.
 * dunmer_male.txt: 1,729 male Dunmer first names.
 * dunmer_family.txt: 1,344 Dunmer family surnames.
+#### Redguard
+* redguard_female.txt: 909 female Redguard first names.
+* redguard_male.txt: 1,021 male Redguard first names.
+* redguard_family.txt: 168 Redguard family names.
+
+**Note:** Altmer, Argonian, Dunmer, Redguard belong to The Elder Scrolls games and their creators, and no claim is made by the author of this software of ownership of these names. The creator of this software included these names as an homage, not as a claim of any kind.
