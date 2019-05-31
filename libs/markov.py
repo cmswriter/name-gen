@@ -101,7 +101,7 @@ class NameGenerator(object):
 
     def __cap_splits(self, s):
         """Capitalize names that are split with spaces or apostrophes."""
-        splitters = ["'", " ", "-"]
+        splitters = [" ", "-"]
         for splitter in splitters:
             s = f"\n{splitter}\n".join([part for part in s.split(splitter)])
         return "".join([name.capitalize() for name in s.split("\n")])
