@@ -107,6 +107,10 @@ The more, the merrier. More names adds more potential variety to the names gener
 * argonian_female.txt: 928 female Argonian first names.
 * argonian_male.txt: 984 male Argonian first names.
 * argonian_family.txt: 169 Argonian family surnames.
+#### Breton
+* breton_female.txt: 1,019 female Breton first names.
+* breton_male.txt: 1,157 male Breton first names.
+* breton_family.txt: 1,020 Breton family surnames.
 #### Dunmer
 * dunmer_female.txt: 1,471 female Dunmer first names.
 * dunmer_male.txt: 1,729 male Dunmer first names.
@@ -114,11 +118,11 @@ The more, the merrier. More names adds more potential variety to the names gener
 #### Imperial
 * imperial_female.txt: 351 female Imperial first names.
 * imperial_male.txt: 547 male Imperial first names.
-* imperial_family.txt: 635 Imperial family names.
+* imperial_family.txt: 635 Imperial family surnames.
 #### Khajiit
 * khajiit_female: 977 female Khajiit first names.
 * khajiit_male: 1,041 male Khajiit first names.
-* khajiit_family: 231 Khajiit family names.
+* khajiit_family: 231 Khajiit family surnames.
 #### Nord
 * nord_female.txt: 958 female Nord first names.
 * nord_male.txt: 1,535 male Nord first names.
@@ -130,6 +134,6 @@ The more, the merrier. More names adds more potential variety to the names gener
 #### Redguard
 * redguard_female.txt: 909 female Redguard first names.
 * redguard_male.txt: 1,021 male Redguard first names.
-* redguard_family.txt: 168 Redguard family names.
+* redguard_family.txt: 168 Redguard family surnames.
 
-**Note:** The Altmer, Argonian, Dunmer, Imperial, Khajiit, Nord, Redguard races and names belong to The Elder Scrolls games and their creators, and no claim is made by the author of this software of ownership of these names. The creator of this software included these names as an homage, not as a claim of any kind.
+**Note:** The Altmer, Argonian, Breton, Dunmer, Imperial, Khajiit, Nord, Redguard races and names belong to The Elder Scrolls games and their creators, and no claim is made by the author of this software of ownership of these names. The creator of this software included these names as an homage, not as a claim of any kind.
