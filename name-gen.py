@@ -21,14 +21,14 @@ def read_args():
         epilog=textwrap.dedent(
             f"""\
             examples:
-              {sys.argv[0]} male
-                  generate one name based on lists/male.txt
-              {sys.argv[0]} -n 5 female
-                  generate five names based on lists/female.txt
-              {sys.argv[0]} -n 5 male,female
+              {sys.argv[0]} r/us/mas
+                  generate one name based on lists/r/us/mas
+              {sys.argv[0]} -n 5 r/us/fem
+                  generate five names based on lists/r/us/fem
+              {sys.argv[0]} -n 5 r/us/mas,r/us/fem
                   generate five names based on both lists combined
-              {sys.argv[0]} -o names.txt -n 5 female
-                  generate five names based on lists/female.txt and store
+              {sys.argv[0]} -o names.txt -n 5 f/dun/sur
+                  generate five names based on lists/f/dun/sur and store
                   them in names.txt
             """
         ),
@@ -53,7 +53,7 @@ def read_args():
 
 args = read_args()
 
-print("[*] Name-Gen by CMSteffen (v0.0.0)")
+print("[*] Name-Gen by CMSteffen (v0.0.1)")
 print("[*] Lists selected:")
 lists = [
     pnr(list)

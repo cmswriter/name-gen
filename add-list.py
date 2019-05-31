@@ -8,7 +8,7 @@ if len(sys.argv) != 3:
     print(f"Usage: {sys.argv[0]} [names.txt] [one-word name for list]")
     print(f"Example: {sys.argv[0]} demo.txt demo_names")
     print("  This would format the names in demo.txt and store them")
-    print("  in lists/demo_names.txt.")
+    print("  in lists/demo_names.")
     sys.exit(0)
 
 with open(sys.argv[1]) as f:
@@ -29,6 +29,6 @@ with open(sys.argv[1]) as f:
         )
     )
 output = "\n".join(names)
-with open(f"lists/{sys.argv[2]}.txt", "w") as f:
+with open(f"lists/{sys.argv[2]}", "w") as f:
     f.write(output)
-print(f"{len(names)} names saved in lists/{sys.argv[2]}.txt.")
+print(f"{len(names)} names saved in lists/{sys.argv[2]}.")

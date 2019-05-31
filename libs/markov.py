@@ -97,10 +97,10 @@ class NameGenerator(object):
         """Initialize the Name Generator."""
         self.name_lists = dict()
         for list_ in lists:
-            self.name_lists[list_] = self.__load_list(f"lists/{list_}.txt")
+            self.name_lists[list_] = self.__load_list(f"lists/{list_}")
 
     def __cap_splits(self, s):
-        """Capitalize names that are split with spaces or apostrophes."""
+        """Capitalize names that are split with spaces or hyphenated."""
         splitters = [" ", "-"]
         for splitter in splitters:
             s = f"\n{splitter}\n".join([part for part in s.split(splitter)])

@@ -21,14 +21,14 @@ optional arguments:
   -o OUT, --out OUT  output file name
 
 examples:
-  ./name-gen.py male
-      generate one name based on lists/male.txt
-  ./name-gen.py -n 5 female
-      generate five names based on lists/female.txt
-  ./name-gen.py -n 5 male,female
+  ./name-gen.py r/us/mas
+      generate one name based on lists/r/us/mas
+  ./name-gen.py -n 5 r/us/fem
+      generate five names based on lists/r/us/fem
+  ./name-gen.py -n 5 r/us/mas,r/us/fem
       generate five names based on both lists combined
-  ./name-gen.py -o names.txt -n 5 last
-      generate five names based on lists/last.txt and store
+  ./name-gen.py -o names.txt -n 5 f/dun/sur
+      generate five names based on lists/f/dun/sur and store
       them in names.txt
 ```
 
@@ -63,7 +63,7 @@ That's pretty sloppy, but `add-list.py` can handle it:
 
 ```
 bash@localhost$ ./add-list.py names.txt names
-7 names saved in lists/names.txt.
+7 names saved in lists/names.
 ```
 
 The script automatically detects duplicate names and fixes capitalization. Here's the contents of `lists/names.txt` after the script is run:
@@ -89,55 +89,64 @@ bash@localhost$ ./name-gen.py names
 [-]   Alaise
 ```
 
+*Note: `add-list.py` does not automatically assume taxonomy for the name lists you create. They will be stored in the `lists` directory, unsorted, until you choose to sort them.*
 
 ## How many names should be in a name list?
 The more, the merrier. More names adds more potential variety to the names generated, while a shorter list will result in less diverse results.
 
 ## What name lists are currently included?
-### Human Names from the United States
-* female.txt: 4,098 female first names taken from U.S. Census data.
-* male.txt: 1,147 male first names taken from U.S. Census data.
-* last.txt: 1,118 surnames taken from U.S. Census data.
-### Racial Names from The Elder Scrolls Games
-#### Altmer
-* altmer_female.txt: 982 female Altmer first names.
-* altmer_male.txt: 1,175 male Altmer first names.
-* altmer_family.txt: 165 Altmer family surnames.
-#### Argonian
-* argonian_female.txt: 928 female Argonian first names.
-* argonian_male.txt: 984 male Argonian first names.
-* argonian_family.txt: 169 Argonian family surnames.
-#### Bosmer
-* bosmer_female.txt: 852 female Bosmer first names.
-* bosmer_male.txt: 969 male Bosmer first names.
-* bosmer_family.txt: 221 Bosmer family surnames.
-#### Breton
-* breton_female.txt: 1,019 female Breton first names.
-* breton_male.txt: 1,157 male Breton first names.
-* breton_family.txt: 1,020 Breton family surnames.
-#### Dunmer
-* dunmer_female.txt: 1,471 female Dunmer first names.
-* dunmer_male.txt: 1,729 male Dunmer first names.
-* dunmer_family.txt: 1,344 Dunmer family surnames.
-#### Imperial
-* imperial_female.txt: 351 female Imperial first names.
-* imperial_male.txt: 547 male Imperial first names.
-* imperial_family.txt: 635 Imperial family surnames.
-#### Khajiit
-* khajiit_female: 977 female Khajiit first names.
-* khajiit_male: 1,041 male Khajiit first names.
-* khajiit_family: 231 Khajiit family surnames.
-#### Nord
-* nord_female.txt: 958 female Nord first names.
-* nord_male.txt: 1,535 male Nord first names.
-* nord_family.txt: 825 Nord family surnames.
-#### Orc
-* orc_female.txt: 613 female Orc first names.
-* orc_male.txt: 848 male Orc first names.
-* orc_family.txt: 404 Orc family surnames.
-#### Redguard
-* redguard_female.txt: 909 female Redguard first names.
-* redguard_male.txt: 1,021 male Redguard first names.
-* redguard_family.txt: 168 Redguard family surnames.
+The name lists are sorted into subfolders within the `lists/` directory, dependent upon their taxonomy. Here is how they are organized:
+
+```
+lists           Included Name-Lists:
+├── f             Fiction: Names from books, games, and other media.
+│   ├── alt         Altmer -- The Elder Scrolls
+│   │   ├── fem       Feminine Altmer names.
+│   │   ├── mas       Masculine Altmer names.
+│   │   └── sur       Altmer surnames.
+│   ├── arg         Argonian -- The Elder Scrolls
+│   │   ├── fem       Feminine Argonian names.
+│   │   ├── mas       Masculine Argonian names.
+│   │   └── sur       Argonian surnames.
+│   ├── bos         Bosmer -- The Elder Scrolls
+│   │   ├── fem       Feminine Bosmer names.
+│   │   ├── mas       Masculine Bosmer names.
+│   │   └── sur       Bosmer surnames.
+│   ├── bre         Breton -- The Elder Scrolls
+│   │   ├── fem       Feminine Breton names.
+│   │   ├── mas       Masculine Breton names.
+│   │   └── sur       Breton surnames.
+│   ├── dun         Dunmer -- The Elder Scrolls
+│   │   ├── fem       Feminine Dunmer names.
+│   │   ├── mas       Masculine Dunmer names.
+│   │   └── sur       Dunmer surnames.
+│   ├── imp         Imperial -- The Elder Scrolls
+│   │   ├── fem       Feminine Imperial names.
+│   │   ├── mas       Masculine Imperial names.
+│   │   └── sur       Imperial surnames.
+│   ├── kha         Khajiit -- The Elder Scrolls
+│   │   ├── fem       Feminine Khajiit names.
+│   │   ├── mas       Masculine Khajiit names.
+│   │   └── sur       Khajiit surnames.
+│   ├── nor         Nord -- The Elder Scrolls
+│   │   ├── fem       Feminine Nord names.
+│   │   ├── mas       Masculine Nord names.
+│   │   └── sur       Nord surnames.
+│   ├── orc         Orc -- The Elder Scrolls
+│   │   ├── fem       Feminine Orc names.
+│   │   ├── mas       Masculine Orc names.
+│   │   └── sur       Orc surnames.
+│   └── red         Redguard -- The Elder Scrolls
+│       ├── fem       Feminine Redguard names.
+│       ├── mas       Masculine Redguard names.
+│       └── sur       Redguard surnames.
+└── r             Reality: Names from real people, places and things.
+    └── usa         USA -- The United States
+        ├── fem       Feminine American names.
+        ├── mas       Masculine American names.
+        └── sur       American surnames.
+
+13 directories, 33 files
+```
 
 **Note:** The Altmer, Argonian, Bosmer, Breton, Dunmer, Imperial, Khajiit, Nord, Orc and Redguard races and names belong to The Elder Scrolls games and their creators, and no claim is made by the author of this software of ownership of these names. The creator of this software included these names as an homage, not as a claim of any kind.
