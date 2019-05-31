@@ -66,7 +66,7 @@ bash@localhost$ ./add-list.py names.txt names
 7 names saved in lists/names.
 ```
 
-The script automatically detects duplicate names and fixes capitalization. Here's the contents of `lists/names.txt` after the script is run:
+The script automatically detects duplicate names and fixes capitalization. Here's the contents of `lists/names` after the script is run:
 
 ```
 Alana
