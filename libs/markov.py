@@ -99,6 +99,13 @@ class NameGenerator(object):
         for list_ in lists:
             self.name_lists[list_] = self.__load_list(f"lists/{list_}.txt")
 
+    def __cap_splits(self, s):
+        """Capitalize names that are split with spaces or apostrophes."""
+        splitters = [" ", "-"]
+        for splitter in splitters:
+            s = f"\n{splitter}\n".join([part for part in s.split(splitter)])
+        return "".join([name.capitalize() for name in s.split("\n")])
+
     def __load_list(self, filename):
         """Load a list of names from the specified text file."""
         return [
@@ -133,4 +140,4 @@ class NameGenerator(object):
 
     def get_name(self):
         """Generate a new name for the specified gender."""
-        return MName(self.__pick_names()).New()
+        return self.__cap_splits(MName(self.__pick_names()).New())
