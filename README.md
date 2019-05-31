@@ -111,6 +111,10 @@ The more, the merrier. More names adds more potential variety to the names gener
 * dunmer_female.txt: 1,471 female Dunmer first names.
 * dunmer_male.txt: 1,729 male Dunmer first names.
 * dunmer_family.txt: 1,344 Dunmer family surnames.
+#### Orc
+* orc_female.txt: 613 female Orc first names.
+* orc_male.txt: 848 male Orc first names.
+* orc_family.txt: 404 Orc family surnames.
 #### Redguard
 * redguard_female.txt: 909 female Redguard first names.
 * redguard_male.txt: 1,021 male Redguard first names.
