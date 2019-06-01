@@ -100,6 +100,8 @@ The name lists are sorted into subfolders within the `lists/` directory, depende
 ```
 lists           Included Name-Lists:
 ├── f             Fiction: Names from books, games, and other media.
+│   ├── aed         Aedra/Daedra -- The Elder Scrolls
+│   │   └── all       All the names of the Aedra and Daedra.
 │   ├── alt         Altmer -- The Elder Scrolls
 │   │   ├── fem       Feminine Altmer names.
 │   │   ├── mas       Masculine Altmer names.
@@ -121,7 +123,7 @@ lists           Included Name-Lists:
 │   │   ├── mas       Masculine Dunmer names.
 │   │   └── sur       Dunmer surnames.
 │   ├── dwe         Dwemer -- The Elder Scrolls
-│   │   └── rui       Dwemer ruins.
+│   │   └── rui       Ancient Dwemer ruins.
 │   ├── imp         Imperial -- The Elder Scrolls
 │   │   ├── fem       Feminine Imperial names.
 │   │   ├── mas       Masculine Imperial names.
@@ -133,7 +135,8 @@ lists           Included Name-Lists:
 │   ├── nor         Nord -- The Elder Scrolls
 │   │   ├── fem       Feminine Nord names.
 │   │   ├── mas       Masculine Nord names.
-│   │   └── sur       Nord surnames.
+│   │   ├── sur       Nord surnames.
+│   │   └── tom       Ancient Nordic tombs.
 │   ├── orc         Orc -- The Elder Scrolls
 │   │   ├── fem       Feminine Orc names.
 │   │   ├── mas       Masculine Orc names.
