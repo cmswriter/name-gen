@@ -21,11 +21,11 @@ def read_args():
         epilog=textwrap.dedent(
             f"""\
             examples:
-              {sys.argv[0]} r/us/mas
-                  generate one name based on lists/r/us/mas
-              {sys.argv[0]} -n 5 r/us/fem
-                  generate five names based on lists/r/us/fem
-              {sys.argv[0]} -n 5 r/us/mas,r/us/fem
+              {sys.argv[0]} r/usa/mas
+                  generate one name based on lists/r/usa/mas
+              {sys.argv[0]} -n 5 r/usa/fem
+                  generate five names based on lists/r/usa/fem
+              {sys.argv[0]} -n 5 r/usa/mas,r/usa/fem
                   generate five names based on both lists combined
               {sys.argv[0]} -o names.txt -n 5 f/dun/sur
                   generate five names based on lists/f/dun/sur and store
